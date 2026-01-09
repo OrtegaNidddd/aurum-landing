@@ -4,7 +4,7 @@ Landing page para el SaaS de gestión de talleres de joyería.
 
 ### Requisitos
 - Node.js 20+
-- pnpm (o npm/yarn/bun)
+- npm (o yarn/pnpm/bun)
 
 ### Scripts
 - `npm run dev` – entorno local en http://localhost:3000
@@ -29,7 +29,7 @@ Coloca estos archivos en `public/` (algunos ya existen):
 - `icon-192x192.png`
 - `icon-512x512.png`
 - `apple-touch-icon.png` (180x180) — recomendado para iOS
-- `og-image.jpg` (1200x630) — imagen para compartir
+- `og-image.png` (1200x630) — imagen para compartir
 
 ### WhatsApp CTAs
 Los botones "Solicitar Demo" y "Contactar" abren WhatsApp al +573208396909 con mensajes prellenados. Ajusta el número o texto en:
