@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     siteName: "AURUM",
     images: [
       {
-        url: `${siteUrl}/og-image.jpg`,
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "AURUM - Sistema de Gestión para Talleres de Joyería",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: "AURUM - Gestión Profesional de Talleres de Joyería",
     description:
       "Sistema SaaS para la gestión integral de talleres de joyería. Control total, trazabilidad y eficiencia operativa.",
-    images: [`${siteUrl}/og-image.jpg`],
+    images: [`${siteUrl}/og-image.png`],
     creator: "@aurum",
   },
   alternates: {

@@ -16,12 +16,12 @@ export const organizationSchema = {
   },
   description:
     "Sistema SaaS para la gestión integral de talleres de joyería: pedidos, diseños, fabricaciones, entregas, clientes y control de pagos.",
-  screenshot: "https://aurumapp.site/og-image.jpg",
+  screenshot: "https://aurumapp.site/og-image.png",
   provider: {
     "@type": "Organization",
     name: "AURUM",
     url: "https://aurumapp.site",
-    logo: "https://aurumapp.site/icon.svg",
+    logo: "https://aurumapp.site/icon-512x512.png",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+57-320-839-6909",
@@ -49,7 +49,7 @@ export const webPageSchema = {
     name: "AURUM",
     logo: {
       "@type": "ImageObject",
-      url: "https://aurumapp.site/icon.svg",
+      url: "https://aurumapp.site/icon-512x512.png",
     },
   },
 }
