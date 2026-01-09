@@ -1,6 +1,6 @@
 ## AURUM Landing
 
-Landing page para el SaaS de gestión de talleres de joyería.
+Landing page para Aurum de gestión de talleres de joyería.
 
 ### Requisitos
 - Node.js 20+
