@@ -1,15 +1,15 @@
-import { Zap, Lock, Smartphone, Globe, FileJson, Activity } from "lucide-react"
+import { Zap, Lock, Smartphone, Globe, FileJson, Activity, Server } from "lucide-react"
 
 const techBenefits = [
   {
     icon: Zap,
     title: "Alto Rendimiento",
-    description: "Backend optimizado y frontend reactivo para una experiencia fluida.",
+    description: "Backend Laravel 12 optimizado y frontend React 19/Vite para experiencia fluida.",
   },
   {
     icon: Lock,
     title: "Seguridad Empresarial",
-    description: "Autenticación por tokens, permisos granulares y auditoría completa.",
+    description: "Autenticación Sanctum, roles granulares y auditoría completa en cada cambio.",
   },
   {
     icon: Smartphone,
@@ -24,21 +24,27 @@ const techBenefits = [
   {
     icon: FileJson,
     title: "API Documentada",
-    description: "Documentación OpenAPI completa para integraciones personalizadas.",
+    description: "Documentación OpenAPI/Swagger completa para integraciones personalizadas.",
   },
   {
     icon: Activity,
     title: "Monitoreo en Tiempo Real",
     description: "Dashboard con métricas actualizadas y exportación de reportes.",
   },
+  {
+    icon: Server,
+    title: "Emails por HTTPS",
+    description: "Envía facturas por Brevo API (puerto 443), ideal para VPS sin SMTP abierto.",
+  },
 ]
 
 const techStack = [
   { name: "Laravel 12", category: "Backend" },
-  { name: "React 19", category: "Frontend" },
+  { name: "React 19 + Vite 7", category: "Frontend" },
   { name: "TailwindCSS 4", category: "Estilos" },
   { name: "Sanctum", category: "Auth" },
-  { name: "MySQL", category: "Base de Datos" },
+  { name: "MySQL 8", category: "Base de Datos" },
+  { name: "Brevo API", category: "Emails" },
   { name: "PWA", category: "Mobile" },
 ]
 

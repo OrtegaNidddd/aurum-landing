@@ -4,7 +4,8 @@ const workflowSteps = [
   {
     state: "Creado",
     title: "Pedido Creado",
-    description: "El asesor registra el pedido con los datos del cliente y especificaciones de la pieza.",
+    description:
+      "El asesor registra cliente, descripción y cotización opcional. Se dispara factura PDF por email si hay cotización.",
     color: "var(--color-info)",
     bgColor: "var(--color-info-soft)",
   },
@@ -18,14 +19,14 @@ const workflowSteps = [
   {
     state: "Calidad",
     title: "Control de Calidad",
-    description: "La pieza terminada pasa a revisión antes de ser entregada al cliente.",
+    description: "La pieza terminada pasa a revisión antes de entrega; se audita cada cambio de estado.",
     color: "var(--aurum-gold)",
     bgColor: "var(--color-accent-soft)",
   },
   {
     state: "Entregado",
     title: "Entregado",
-    description: "El pedido se registra como entregado con responsable y fecha de entrega.",
+    description: "El pedido se registra como entregado con responsable y fecha; queda trazabilidad completa.",
     color: "var(--color-success)",
     bgColor: "var(--color-success-soft)",
   },
@@ -140,9 +141,10 @@ export function WorkflowSection() {
         >
           <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>
             <span className="font-medium" style={{ color: "var(--color-text-main)" }}>
-              Cancelación disponible:
+              Cancelación disponible y facturas automáticas:
             </span>{" "}
-            Los pedidos pueden cancelarse desde el estado &quot;Creado&quot; antes de iniciar fabricación.
+            Los pedidos pueden cancelarse desde &quot;Creado&quot; antes de iniciar fabricación. Cada cotización o abono genera
+            factura informativa enviada por email al cliente.
           </p>
         </div>
       </div>

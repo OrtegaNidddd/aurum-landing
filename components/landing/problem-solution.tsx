@@ -2,16 +2,18 @@ import { AlertTriangle, CheckCircle2 } from "lucide-react"
 
 const problems = [
   "Pedidos anotados en papel o Excel que se pierden",
-  "Sin visibilidad del estado real de cada pieza",
+  "Facturas manuales que no llegan al cliente a tiempo",
+  "Sin visibilidad del estado real ni responsables",
   "Dificultad para calcular saldos y abonos",
-  "Descoordinación entre diseñadores, maestros y asesores",
+  "Descoordinación entre asesores y maestros",
 ]
 
 const solutions = [
-  "Sistema centralizado con historial completo de cada pedido",
-  "Estados claros: Creado → Fabricación → Calidad → Entregado",
-  "Cálculo automático de cotizaciones, abonos y saldos",
-  "Roles definidos con permisos específicos para cada área",
+  "Sistema centralizado con historial y auditoría completa",
+  "Envío automático de facturas PDF por email al crear pedidos y registrar abonos",
+  "Estados claros: Creado → Fabricación → Calidad → Entregado (o Cancelado)",
+  "Cálculo automático de cotizaciones, abonos y saldo pendiente",
+  "Roles definidos (Admin, Asesor, Maestro) con permisos específicos",
 ]
 
 export function ProblemSolution() {

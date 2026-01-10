@@ -1,50 +1,62 @@
-import { ClipboardList, Palette, Hammer, Truck, CreditCard, BarChart3, Users, Shield } from "lucide-react"
+import { ClipboardList, Palette, Hammer, Truck, CreditCard, BarChart3, Users, Shield, Mail, FileText } from "lucide-react"
 
 const features = [
   {
     icon: ClipboardList,
-    title: "Gestión de Pedidos",
+    title: "Pedidos y Clientes",
     description:
-      "Control completo del ciclo de vida de cada pedido con estados claros y auditoría automática de cambios.",
+      "CRUD completo con búsqueda por nombre, cédula y email. Cada pedido arranca en estado 'Creado' con historial.",
   },
   {
-    icon: Palette,
-    title: "Diseños Versionados",
+    icon: FileText,
+    title: "Cotizaciones e Inventario",
+    description: "Crea cotizaciones con validaciones de flujo y controla materiales clave (oro, plata, piedras).",
+  },
+  {
+    icon: Mail,
+    title: "Facturas Automáticas",
     description:
-      "Almacena y versiona los diseños de cada pieza. Cada actualización genera una nueva versión con historial.",
-  },
-  {
-    icon: Hammer,
-    title: "Control de Fabricación",
-    description: "Asigna maestros joyeros, rastrea el progreso y registra la fecha de finalización de cada pieza.",
-  },
-  {
-    icon: Truck,
-    title: "Registro de Entregas",
-    description: "Documenta cada entrega con responsable y fecha. El pedido se marca automáticamente como entregado.",
+      "Envío de PDF por email (Brevo API) al crear pedidos con cotización y al registrar abonos. Exporta PDF/Excel.",
   },
   {
     icon: CreditCard,
     title: "Abonos y Saldos",
     description:
-      "Registra pagos parciales con método y notas. Calcula automáticamente el saldo pendiente de cada pedido.",
+      "Registra pagos parciales, calcula saldo en tiempo real y genera facturas informativas para cada abono.",
   },
   {
-    icon: BarChart3,
-    title: "Dashboard con KPIs",
+    icon: Palette,
+    title: "Diseños Versionados",
     description:
-      "Visualiza métricas clave: pedidos activos, ingresos, fabricaciones pendientes y exporta reportes en PDF o Excel.",
+      "Almacena archivos por pedido, versiona automáticamente y mantiene acceso público controlado desde storage.",
   },
   {
-    icon: Users,
-    title: "Multi-rol",
-    description: "Tres roles definidos: Admin, Asesor y Maestro. Cada uno con permisos específicos.",
+    icon: Hammer,
+    title: "Fabricación Controlada",
+    description:
+      "Asigna maestros, gestiona estados 'En Progreso' y 'Completada' y mueve el pedido a 'Calidad' al finalizar.",
+  },
+  {
+    icon: Truck,
+    title: "Entregas con Auditoría",
+    description: "Registra responsable y fecha; el pedido pasa a 'Entregado' solo si estaba en 'Calidad'.",
   },
   {
     icon: Shield,
-    title: "Auditoría Completa",
+    title: "Roles y Auditoría",
     description:
-      "Registro automático de cambios de estado, cotizaciones, fabricaciones y entregas con trazabilidad total.",
+      "Roles Admin, Asesor y Maestro con abilities Sanctum. Bitácora de estados, cotizaciones, fabricaciones y entregas.",
+  },
+  {
+    icon: BarChart3,
+    title: "Dashboard y Reportes",
+    description:
+      "KPIs en tiempo real y exportes de dashboard en PDF/Excel. Monitoreo de pedidos, abonos y fabricación pendiente.",
+  },
+  {
+    icon: Users,
+    title: "PWA y Accesibilidad",
+    description: "Aplicación web + PWA instalable, usable desde navegador o móvil con autenticación por tokens.",
   },
 ]
 

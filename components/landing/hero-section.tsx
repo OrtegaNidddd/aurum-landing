@@ -43,8 +43,8 @@ export function HeroSection() {
             className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10 text-balance"
             style={{ color: "var(--color-text-muted)" }}
           >
-            Control total de pedidos, diseños, fabricaciones y entregas. Trazabilidad completa y eficiencia operativa
-            para tu taller de joyería.
+            Control de pedidos, cotizaciones, abonos y facturas automáticas por email. Flujo completo de diseño,
+            fabricación, calidad y entrega con trazabilidad y auditoría.
           </p>
 
           {/* CTA Buttons */}
@@ -71,10 +71,10 @@ export function HeroSection() {
             style={{ borderColor: "var(--color-border-soft)" }}
           >
             {[
-              { value: "100%", label: "Trazabilidad" },
-              { value: "3", label: "Roles de Usuario" },
-              { value: "5", label: "Estados de Pedido" },
-              { value: "PWA", label: "Aplicación Móvil" },
+              { value: "5", label: "Estados del Pedido" },
+              { value: "3", label: "Roles Operativos" },
+              { value: "Auto", label: "Facturas por Email" },
+              { value: "PWA", label: "Instalable en Móvil" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold mb-1" style={{ color: "var(--aurum-gold)" }}>

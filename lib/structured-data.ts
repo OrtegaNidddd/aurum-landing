@@ -15,7 +15,7 @@ export const organizationSchema = {
     ratingCount: "50",
   },
   description:
-    "Sistema SaaS para la gestión integral de talleres de joyería: pedidos, diseños, fabricaciones, entregas, clientes y control de pagos.",
+    "Sistema SaaS para la gestión integral de talleres de joyería: pedidos, cotizaciones, abonos con facturas automáticas por email, diseños versionados, fabricaciones, entregas y control completo de clientes.",
   screenshot: "https://aurumapp.site/og-image.png",
   provider: {
     "@type": "Organization",
@@ -41,7 +41,7 @@ export const webPageSchema = {
   "@type": "WebPage",
   name: "AURUM - Gestión Profesional de Talleres de Joyería",
   description:
-    "Sistema SaaS para la gestión integral de talleres de joyería: pedidos, diseños, fabricaciones, entregas, clientes y control de pagos.",
+    "Sistema SaaS para la gestión integral de talleres de joyería: pedidos, cotizaciones, abonos con facturas automáticas por email, diseños versionados, fabricaciones, entregas y control completo de clientes.",
   url: "https://aurumapp.site",
   inLanguage: "es-ES",
   publisher: {

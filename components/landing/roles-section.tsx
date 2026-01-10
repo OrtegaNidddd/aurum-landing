@@ -7,10 +7,10 @@ const roles = [
     description: "Control total del sistema",
     permissions: [
       "Acceso completo a todos los módulos",
-      "Gestión de usuarios y roles",
+      "Gestión de usuarios, roles y tokens",
       "Reportes y exportaciones PDF/Excel",
       "Dashboard con KPIs globales",
-      "Auditoría de todas las operaciones",
+      "Auditoría completa de operaciones",
     ],
     color: "var(--aurum-gold)",
   },
@@ -21,9 +21,9 @@ const roles = [
     permissions: [
       "Crear y gestionar pedidos propios",
       "Registrar clientes en el sistema",
-      "Registrar cotizaciones y abonos",
-      "Subir diseños al sistema",
-      "Crear órdenes de fabricación",
+      "Registrar cotizaciones y abonos (con facturas automáticas)",
+      "Subir diseños versionados",
+      "Crear órdenes de fabricación y entregas",
       "Registrar entregas",
     ],
     color: "var(--color-info)",
@@ -98,7 +98,7 @@ export function RolesSection() {
         </div>
 
         <p className="text-center text-sm mt-8" style={{ color: "var(--color-text-muted)" }}>
-          Los clientes son registrados por asesores o administradores para vincularlos a sus pedidos.
+          Los clientes no se autentican; se registran por asesores o administradores para asociar pedidos y facturas.
         </p>
       </div>
     </section>
